@@ -1,0 +1,62 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+html,
+body {
+  margin: 0 auto;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #333;
+}
+
+.app {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.loading-wrap {
+  display: flex;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading {
+  animation: loading 1s linear infinite;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

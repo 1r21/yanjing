@@ -1,0 +1,17 @@
+{
+  "name": "yanjing",
+  "productName": "Yanjing",
+  "description": "A news infomation desktop client",
+  "version": "0.0.1",
+  "main": "./main.prod.js",
+  "author": {
+    "name": "iron",
+    "email": "472263356@qq.com",
+    "url": "https://github.com/1r21/yanjing"
+  },
+  "scripts": {
+    "electron-rebuild": "node -r ../.erb/scripts/BabelRegister.js ../.erb/scripts/ElectronRebuild.js",
+    "postinstall": "yarn electron-rebuild"
+  },
+  "license": "MIT"
+}

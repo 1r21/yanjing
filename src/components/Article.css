@@ -1,0 +1,38 @@
+.article-wrap {
+  display: block;
+  width: 180px;
+  padding: 10px;
+}
+.article-wrap > a {
+  display: block;
+  text-decoration: none;
+}
+
+.article-wrap img:hover {
+  transition: transform 1s;
+  transform: scale(1.05, 1.05);
+}
+
+.article-wrap img {
+  display: block;
+  width: 100%;
+  height: 120px;
+  border-radius: 3px;
+}
+
+.article-wrap .text {
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.article-wrap .text:hover {
+  color: #888;
+}
+
+.article-wrap .title {
+  font-size: 12px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
